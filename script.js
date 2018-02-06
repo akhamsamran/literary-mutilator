@@ -14,7 +14,15 @@ function changeFont() {
 	document.getElementById("named").style.fontFamily = "Times New Roman", Times, serif;
 	document.getElementById("author").style.fontFamily = "Georgia, serif";
 };
-
+function highlightParagraph1() {
+	document.getElementById("paragraph1").style.backgroundColor = "yellow";
+}
+function highlightParagraph2() {
+	document.getElementById("paragraph2").style.backgroundColor = "yellow";
+}
+function highlightParagraph3() {
+	document.getElementById("paragraph3").style.backgroundColor = "yellow";
+}
 
 /**
  * shuffles an array using the Fisher-Yates algorithm
