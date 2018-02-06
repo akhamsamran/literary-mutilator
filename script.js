@@ -27,6 +27,20 @@ function highlightParagraph2() {
 function highlightParagraph3() {
 	document.getElementById("paragraph3").style.backgroundColor = "yellow";
 };
+/**map the scroll event to remove words**/
+document.getElementById("paragraph3").onscroll = function() {myFunction()};
+
+function myFunction() {
+	document.getElementById("demo").innerHTML = "You scrolled in div.";
+}
+
+
+
+
+
+
+
+
 /** changes all "s" to "$"**/
 //function replaceS() {
 //	document.getElementById("body")str.replace(/s/g,"$"));
@@ -77,27 +91,21 @@ function chooseColors() {
 	var colors = [
 		"#3505DC", "#8333F4", "#DF24F3", "#F8219B", "#FB2267",
 		"#FF2222", "#FF6C22", "#FF9222", "#FFAF22", "#FFC922",
-		"#FFE022", "#FFFE22", "D4FE22#", "#9DFC22", "#21F82F",
+		"#FFE022", "#FFFE22", "#D4FE22", "#9DFC22", "#21F82F",
 		"#21F3CA", "#2F96F3", "#3B58F4", "#5F3AF5"];
 
 	var assignColor = shuffle(chooseColors);
 	var k = 0;
-	var css = "";
-	for (var i = 0; i < 5; i++) {
-		css = css + "#paragraph1";
-		for (var j = 0; j < 5; j++) {
-			var content = "";
+	var html = "";
+	for (var i = 0; i < 1; i++) {
+		html = html + "body";
 			content = chooseColors[k];
 			k++;
 			}
-			css = css + "#paragraph1 { color: " + content + ";}"
+			html = html + "<body style=" + content + ";}"
 		}
-		html = html + "</tr>";
+		html = html + "</body>";
 	}
-	//is this an option?, but then you have to go put an element called snapAnswer into the HTML
-	document.getElementById("snapAnswer").innerHTML = bingoCard[2];
-	document.getElementById("bingoCard").innerHTML = html;
-}
 
  **/
 /**
