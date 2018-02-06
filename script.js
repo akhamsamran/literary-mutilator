@@ -1,12 +1,19 @@
 
 
-//function changeTextColor() {
-//	document.getElementById("paragraph1").style.color = "#6A266F";
-//	document.getElementById("paragraph2").style.color = "#FF7400";
-//	document.getElementById("paragraph3").style.color = "#27A200";
-//	document.getElementById("named").style.color = "#074AA7";
-//	document.getElementById("author").style.color = "#2911B1";
-//};
+function changeTextColor() {
+	document.getElementById("paragraph1").style.color = "#6A266F";
+	document.getElementById("paragraph2").style.color = "#FF7400";
+	document.getElementById("paragraph3").style.color = "#27A200";
+	document.getElementById("named").style.color = "#074AA7";
+	document.getElementById("author").style.color = "#2911B1";
+};
+
+function changeFont() {
+	document.getElementById("paragraph1").style.fontFamily = "Arial";
+	document.getElementById("paragraph2").style.fontFamily = "Courier";
+	document.getElementById("named").style.fontFamily = "Times New Roman", Times, serif;
+	document.getElementById("author").style.fontFamily = "Georgia, serif";
+};
 
 
 /**
@@ -18,6 +25,7 @@
  * @author Dylan McDonald
  * @author Anna Khamsamran <akhamsamran1@cnm.edu>
  **/
+/**
 function shuffle(array) {
 	var currentIndex = array.length,
 		temporaryValue, randomIndex;
@@ -38,10 +46,11 @@ function shuffle(array) {
 	return array;
 }
 
-
+**/
 /**
  * loads a color into css based on an array of color codes
  **/
+/**
 function chooseColors() {
 	var colors = [
 		"#3505DC", "#8333F4", "#DF24F3", "#F8219B", "#FB2267",
@@ -68,7 +77,7 @@ function chooseColors() {
 	document.getElementById("bingoCard").innerHTML = html;
 }
 
-
+ **/
 /**
  solution:
  // captain Dylan works for any sort of tag
