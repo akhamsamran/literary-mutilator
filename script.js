@@ -1,5 +1,5 @@
 
-
+/**changes text color for all paragraphs individually with preset colors**/
 function changeTextColor() {
 	document.getElementById("paragraph1").style.color = "#6A266F";
 	document.getElementById("paragraph2").style.color = "#FF7400";
@@ -8,18 +8,22 @@ function changeTextColor() {
 	document.getElementById("author").style.color = "#2911B1";
 };
 
+/**changes text font for all paragraphs individually with preset fonts**/
 function changeFont() {
 	document.getElementById("paragraph1").style.fontFamily = "Arial";
 	document.getElementById("paragraph2").style.fontFamily = "Courier";
 	document.getElementById("named").style.fontFamily = "Times New Roman", Times, serif;
 	document.getElementById("author").style.fontFamily = "Georgia, serif";
 };
+/**adds highlight to paragraph1**/
 function highlightParagraph1() {
 	document.getElementById("paragraph1").style.backgroundColor = "yellow";
 }
+/**adds highlight to paragraph2**/
 function highlightParagraph2() {
 	document.getElementById("paragraph2").style.backgroundColor = "yellow";
 }
+/**adds highlight to paragraph3**/
 function highlightParagraph3() {
 	document.getElementById("paragraph3").style.backgroundColor = "yellow";
 }
