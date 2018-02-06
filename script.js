@@ -18,15 +18,25 @@ function changeFont() {
 /**adds highlight to paragraph1**/
 function highlightParagraph1() {
 	document.getElementById("paragraph1").style.backgroundColor = "yellow";
-}
+};
 /**adds highlight to paragraph2**/
 function highlightParagraph2() {
 	document.getElementById("paragraph2").style.backgroundColor = "yellow";
-}
+};
 /**adds highlight to paragraph3**/
 function highlightParagraph3() {
 	document.getElementById("paragraph3").style.backgroundColor = "yellow";
-}
+};
+/** changes all "s" to "$"**/
+//function replaceS() {
+//	document.getElementById("body")str.replace(/s/g,"$"));
+//};
+
+//$("#idBut").click(function() {
+//	$("body").children().each(function() {
+//		$(this).html($(this).html().replace(/"s"/g,"$"));
+//	});
+//});
 
 /**
  * shuffles an array using the Fisher-Yates algorithm
